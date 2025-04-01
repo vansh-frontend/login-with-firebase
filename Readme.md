@@ -43,7 +43,7 @@ Welcome to the **Firebase Authentication** project! This repository provides a s
 
 ```sh
 git clone https://github.com/vansh-frontend/login-with-firebase
-cd firebase-auth-app
+cd login-with-firebase
 ```
 
 ### 2️⃣ Setup Firebase  
