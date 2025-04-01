@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="user-info">
+            <img id="user-avatar" src="https://ui-avatars.com/api/?background=random" alt="User Avatar">
+            <span id="user-name">User Name</span>
+            <button class="logout-btn" id="logout-btn">Logout</button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <form id="login-form" class="form-container active">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="login-password" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+                <button type="button" class="google-btn" id="google-signin">Sign in with Google</button>
+                <p class="toggle-text">
+                    Don't have an account? <a id="show-signup">Sign up</a>
+                </p>
+                <p class="forgot-password">
+                    <a id="forgot-password">Forgot Password?</a>
+                </p>
+            </form>
+
+            <form id="signup-form" class="form-container">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" id="signup-name" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="signup-email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p class="toggle-text">
+                    Already have an account? <a id="show-login">Login</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="firebaseConfig.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
